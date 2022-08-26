@@ -20,6 +20,13 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- LIGHTBOX -->
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -31,17 +38,17 @@
         <nav>
           <ul>
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#intro">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#team">Clients</a></li>
+            <li><a href="#feedback">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- CAROUSEL -->
-    <section class="carousel">
+    <section class="carousel" id="carousel">
       <div class="carousel__content">
         <h1>Best Bake Here</h1>
         <p>Donec at massa nec sem eleifend fermentum.</p>
@@ -50,7 +57,7 @@
     </section>
 
     <!-- INTRO -->
-    <section class="intro">
+    <section class="intro" id="intro">
       <div class="intro__item">
         <div>
           <h2>Tradition</h2>
@@ -119,7 +126,7 @@
     </section>
 
     <!-- QUANTITY -->
-    <section class="quantity">
+    <section class="quantity" id="quantity">
       <div class="quantity__content">
         <div class="quantity__item">
           <p class="counter">3500</p>
@@ -141,7 +148,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="services">
+    <section class="services" id="services">
       <h2 class="heading--primary">OUR SERVICES</h2>
       <div class="services__content">
         <div class="service__item">
@@ -172,66 +179,358 @@
     </section>
 
     <!-- GALLERY -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <h2 class="heading--secondary">OUR GALLERY</h2>
       <div class="gallery__content">
         <figure class="gallery__item">
-          <img src="/assets/img/g1.jpg" alt="garelly 1" />
-          <figcaption class="gallery__overlay">
-            <h3><span>OUR</span>GALLERY</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </figcaption>
+          <a href="/assets/img/g1.jpg" data-lightbox="gallery">
+            <img src="/assets/img/g1.jpg" alt="garelly 1" />
+            <figcaption class="gallery__overlay">
+              <h3><span>OUR</span>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </figcaption>
+          </a>
         </figure>
 
         <figure class="gallery__item">
-          <img src="/assets/img/g2.jpg" alt="garelly 2" />
-          <figcaption class="gallery__overlay">
-            <h3><span>OUR</span>GALLERY</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </figcaption>
+          <a href="/assets/img/g2.jpg" data-lightbox="gallery">
+            <img src="/assets/img/g2.jpg" alt="garelly 2" />
+            <figcaption class="gallery__overlay">
+              <h3><span>OUR</span>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </figcaption>
+          </a>
         </figure>
 
         <figure class="gallery__item">
-          <img src="/assets/img/g3.jpg" alt="garelly 3" />
-          <figcaption class="gallery__overlay">
-            <h3><span>OUR</span>GALLERY</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </figcaption>
+          <a href="/assets/img/g3.jpg" data-lightbox="gallery">
+            <img src="/assets/img/g3.jpg" alt="garelly 3" />
+            <figcaption class="gallery__overlay">
+              <h3><span>OUR</span>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </figcaption>
+          </a>
         </figure>
 
         <figure class="gallery__item">
-          <img src="/assets/img/g4.jpg" alt="garelly 4" />
-          <figcaption class="gallery__overlay">
-            <h3><span>OUR</span>GALLERY</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </figcaption>
+          <a href="/assets/img/g4.jpg" data-lightbox="gallery">
+            <img src="/assets/img/g4.jpg" alt="garelly 4" />
+            <figcaption class="gallery__overlay">
+              <h3><span>OUR</span>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </figcaption>
+          </a>
         </figure>
 
         <figure class="gallery__item">
-          <img src="/assets/img/g5.jpg" alt="garelly 5" />
-          <figcaption class="gallery__overlay">
-            <h3><span>OUR</span>GALLERY</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </figcaption>
+          <a href="/assets/img/g5.jpg" data-lightbox="gallery">
+            <img src="/assets/img/g5.jpg" alt="garelly 5" />
+            <figcaption class="gallery__overlay">
+              <h3><span>OUR</span>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </figcaption>
+          </a>
         </figure>
 
         <figure class="gallery__item">
-          <img src="/assets/img/g6.jpg" alt="garelly 6" />
-          <figcaption class="gallery__overlay">
-            <h3><span>OUR</span>GALLERY</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </figcaption>
+          <a href="/assets/img/g6.jpg" data-lightbox="gallery">
+            <img src="/assets/img/g6.jpg" alt="garelly 6" />
+            <figcaption class="gallery__overlay">
+              <h3><span>OUR</span>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </figcaption>
+          </a>
         </figure>
       </div>
     </section>
+
     <!-- TEAM -->
-    <section class="team"></section>
+    <section class="team" id="team">
+      <h2 class="heading--primary">BAKE TEAM</h2>
+      <div class="team__content">
+        <div class="team__item">
+          <img src="./assets/img/t1.jpg" alt="" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+          </div>
+          <div class="team__detail">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Mauris tincidunt dolor eget diam dapibus vitae finibusnisl
+              friuisque pretiuam
+            </p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+
+        <div class="team__item">
+          <img src="./assets/img/t2.jpg" alt="" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+          </div>
+          <div class="team__detail">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Mauris tincidunt dolor eget diam dapibus vitae finibusnisl
+              friuisque pretiuam
+            </p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+
+        <div class="team__item">
+          <img src="./assets/img/t3.jpg" alt="" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+          </div>
+          <div class="team__detail">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Mauris tincidunt dolor eget diam dapibus vitae finibusnisl
+              friuisque pretiuam
+            </p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+
+        <div class="team__item">
+          <img src="./assets/img/t4.jpg" alt="" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+          </div>
+          <div class="team__detail">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Mauris tincidunt dolor eget diam dapibus vitae finibusnisl
+              friuisque pretiuam
+            </p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+
+        <div class="team__item">
+          <img src="./assets/img/t1.jpg" alt="" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+          </div>
+          <div class="team__detail">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Mauris tincidunt dolor eget diam dapibus vitae finibusnisl
+              friuisque pretiuam
+            </p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+
+        <div class="team__item">
+          <img src="./assets/img/t2.jpg" alt="" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+          </div>
+          <div class="team__detail">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Mauris tincidunt dolor eget diam dapibus vitae finibusnisl
+              friuisque pretiuam
+            </p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FEEDBACK -->
-    <section class="feedback"></section>
+    <section class="feedback" id="feedback">
+      <h2 class="heading--primary">TESTIMONIALS</h2>
+      <div class="feedback__content">
+        <div class="owl-carousel">
+          <div>
+            <p>
+              <i class="fa fa-quote-left"></i>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              excepturi architecto doloribus. At, eius! Quae adipisci sint
+              consequuntur est sunt!
+              <i class="fa fa-quote-right"></i>
+            </p>
+            <p class="feedback__name">ALLY</p>
+          </div>
+          <div>
+            <p>
+              <i class="fa fa-quote-left"></i>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              excepturi architecto doloribus. At, eius! Quae adipisci sint
+              consequuntur est sunt!
+              <i class="fa fa-quote-right"></i>
+            </p>
+            <p class="feedback__name">WILSON</p>
+          </div>
+          <div>
+            <p>
+              <i class="fa fa-quote-left"></i>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              excepturi architecto doloribus. At, eius! Quae adipisci sint
+              consequuntur est sunt!
+              <i class="fa fa-quote-right"></i>
+            </p>
+            <p class="feedback__name">MARK</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- CONTACT -->
-    <section class="contact"></section>
+    <section class="contact">
+      <h2 class="heading--secondary">CONTACT</h2>
+      <div class="contact__form">
+        <form action="#">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Last name" />
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Phone" />
+          <textarea cols="30" rows="10" placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="contact__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.627410781111!2d106.61811821380901!3d10.76317156238373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752d281b7b74fd%3A0xf7d3990b0de93863!2zVMOibiBIw7JhIMSQw7RuZw!5e0!3m2!1sen!2s!4v1661517175165!5m2!1sen!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact__info">
+        <div class="contact__item">
+          <i class="fa fa-home"></i>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="contact__item">
+          <i class="fa fa-phone"></i>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="contact__item">
+          <i class="fa fa-envelope-open"></i>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__item">
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, natus
+            illo. Consequatur maiores veniam est.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, natus
+            illo. Consequatur maiores veniam est.
+          </p>
+          <div class="footer__socials">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+
+        <div class="footer__item">
+          <h3>Working Time</h3>
+          <div class="footer__time">
+            <p>Monday</p>
+            <p>9h30 - 18h30</p>
+          </div>
+          <div class="footer__time">
+            <p>Tuesday</p>
+            <p>9h30 - 18h30</p>
+          </div>
+          <div class="footer__time">
+            <p>Wednesday</p>
+            <p>9h30 - 18h30</p>
+          </div>
+          <div class="footer__time">
+            <p>Thursday</p>
+            <p>9h30 - 18h30</p>
+          </div>
+          <div class="footer__time">
+            <p>Friday</p>
+            <p>9h30 - 18h30</p>
+          </div>
+          <div class="footer__time">
+            <p>Saturday</p>
+            <p>9h30 - 18h30</p>
+          </div>
+          <div class="footer__time">
+            <p>Synday</p>
+            <p>9h30 - 18h30</p>
+          </div>
+        </div>
+
+        <div class="footer__item">
+          <h3>Twitter Us</h3>
+          <p>ultricies nec, pellentesque eu, pretium quis</p>
+          <p>ultricies nec, pellentesque eu, pretium quis</p>
+          <p>ultricies nec, pellentesque eu, pretium quis</p>
+          <p>ultricies nec, pellentesque eu, pretium quis</p>
+        </div>
+
+        <div class="footer__item">
+          <h3>SUBSCRIBE US</h3>
+          <form action="">
+            <input type="email" name="" placeholder="name@example.com" id="" />
+            <button type="submit">Send</button>
+          </form>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+            enim soluta at voluptate vitae quae omnis tempora, voluptas sint
+            corrupti.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <p>
+          © 2020 Lorem ipsum dolor sit amet. | Design by <span>CyberSoft</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="back-to-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
 
     <!-- JQuery -->
     <script
@@ -249,6 +548,24 @@
 
     <script>
       $(".counter").countUp();
+    </script>
+
+    <!-- LIGHTBOX -->
+    <script src="assets/js/lightbox.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          dots: true,
+        });
+      });
     </script>
   </body>
 </html>
