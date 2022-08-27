@@ -36,13 +36,13 @@
       <div class="header__content">
         <div class="header__logo">BAKE</div>
         <nav>
-          <ul>
+          <ul id="main-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#intro">About</a></li>
             <li><a href="#services">Service</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#team">Clients</a></li>
-            <li><a href="#feedback">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -403,7 +403,7 @@
       </div>
     </section>
     <!-- CONTACT -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="heading--secondary">CONTACT</h2>
       <div class="contact__form">
         <form action="#">
@@ -566,6 +566,22 @@
           dots: true,
         });
       });
+    </script>
+
+    <script>
+      var mainNav = document.getElementById("main-nav");
+      var listNav = document.getElementsByTagName("li");
+
+      for (var i = 0; i < listNav.length; i++) {
+        listNav[i].addEventListener("click", function () {
+          var currentActive = document.querySelector("#main-nav .active");
+          currentActive.className = currentActive.className.replace(
+            "active",
+            ""
+          );
+          this.className += "active";
+        });
+      }
     </script>
   </body>
 </html>
